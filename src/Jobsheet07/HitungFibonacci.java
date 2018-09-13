@@ -1,6 +1,6 @@
 
 package Jobsheet07;
-
+import java.util.Scanner;
 public class HitungFibonacci {
     private static void tampilJudul(String identitas)
     {
@@ -12,8 +12,16 @@ public class HitungFibonacci {
     public static void main(String[] args )
     {
         String identitas = "Zidan Kamal Arzin / X RPL 2 / 40";
-    
+        int n = tampilInput();
         tampilJudul(identitas);
     }
-  
+    private static int tampilInput() {
+        Scanner scanner = new Scanner(System.in);
+        
+            System.out.println("Bilangan ke-: ");
+            int n = scanner.nextInt();
+            
+            return n;
+    }
 }
+    
